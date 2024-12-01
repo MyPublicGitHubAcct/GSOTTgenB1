@@ -24,12 +24,6 @@ class TestSwitch:
         assert res == 0
 
 
-@pytest.fixture
-def new_history():
-    last_value = 3
-    return operators.history(last_value)
-    
-
 class TestHistory:
 
     def test_history_get_last_value(self, new_history):
@@ -37,13 +31,6 @@ class TestHistory:
         next_res = new_history.get_last_value(5)
         assert res == 3
         assert next_res == 4
-
-
-@pytest.fixture
-def new_buffer():
-    buffer_data = np.array([ [0.01, 0.02, 0.03], [0.04, 0.05, 0.06] ])
-    num_out_chans = 2
-    return operators.peek(buffer_data, num_out_chans)
 
 
 class TestPeek:

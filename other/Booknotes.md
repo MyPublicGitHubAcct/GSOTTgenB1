@@ -7,6 +7,7 @@ Other sources:
 - https://docs.cycling74.com/userguide/gen/_gen_overview/
 - https://docs.cycling74.com/userguide/gen/gen~_operators/
 - https://cycling74.com/tutorials/gen-video-tutorial-series
+- https://emimartin.me/pytest_best_practices
 
 ## Python environment
 
