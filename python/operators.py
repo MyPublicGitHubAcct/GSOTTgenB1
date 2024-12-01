@@ -2,6 +2,7 @@
 
 import numpy as np
 
+
 def switch(reset: bool, new_value) -> float:
     """ 
     Parameters:
