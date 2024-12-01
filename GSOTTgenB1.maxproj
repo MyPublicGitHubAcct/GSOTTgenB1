@@ -2,9 +2,9 @@
 	"name" : "GSOTTgenB1",
 	"version" : 1,
 	"creationdate" : 3815125654,
-	"modificationdate" : 3815666541,
-	"viewrect" : [ 5.0, 895.0, 300.0, 500.0 ],
-	"autoorganize" : 1,
+	"modificationdate" : 3815926425,
+	"viewrect" : [ 23.0, 607.0, 300.0, 500.0 ],
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -29,12 +29,8 @@
 		}
 ,
 		"code" : 		{
-
-		}
-,
-		"other" : 		{
 			"switch-sound.gendsp" : 			{
-				"kind" : "file",
+				"kind" : "gendsp",
 				"local" : 1
 			}
 
@@ -50,12 +46,12 @@
 
 	}
 ,
-	"detailsvisible" : 0,
+	"detailsvisible" : 1,
 	"amxdtype" : 0,
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0,
-	"viewmode" : 0,
+	"sortmode" : 1,
+	"viewmode" : 1,
 	"includepackages" : 0
 }

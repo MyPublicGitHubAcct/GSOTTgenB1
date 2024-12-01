@@ -1,5 +1,7 @@
 """ https://docs.cycling74.com/userguide/gen/gen~_operators/ """
 
+import numpy as np
+
 def switch(reset: bool, new_value) -> float:
     """ 
     Parameters:
@@ -12,6 +14,19 @@ def switch(reset: bool, new_value) -> float:
         return 0
     else:
         return new_value
+
+
+def phasewrap(angle):
+    """
+    Parameters:
+        angle: The input value
+    Returns: The input wrapped to the range -pi to +pi
+    """
+    angle = np.fmod(angle + np.pi, 2 * np.pi)
+    if (angle < 0):
+        angle += 2 * np.pi
+
+    return angle - np.pi
 
 
 class peek:
