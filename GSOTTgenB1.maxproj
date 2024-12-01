@@ -2,7 +2,7 @@
 	"name" : "GSOTTgenB1",
 	"version" : 1,
 	"creationdate" : 3815125654,
-	"modificationdate" : 3815926425,
+	"modificationdate" : 3815932996,
 	"viewrect" : [ 23.0, 607.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -30,6 +30,11 @@
 ,
 		"code" : 		{
 			"switch-sound.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"ano-phasor.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
