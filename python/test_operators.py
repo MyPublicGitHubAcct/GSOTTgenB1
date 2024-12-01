@@ -1,5 +1,6 @@
 import operators
 import pytest
+import numpy as np
 
 """
 Tests for operators.
@@ -11,36 +12,47 @@ To run only the tests in this file, do this:
     pytest -q python/test_operators.py
 """
 
-@pytest.fixture
-def fruit_bowl():
-    return [Fruit("apple"), Fruit("banana")]
-
 
 class TestSwitch:
 
     def test_switch_false(self):
         res = operators.switch(False, 0.35)
-        assert res == 0
+        assert res == 0.35
 
     def test_switch_true(self):
         res = operators.switch(True, 0.35)
-        assert res == 0.35
+        assert res == 0
+
+
+@pytest.fixture
+def new_history():
+    last_value = 3
+    return operators.history(last_value)
+    
+
+class TestHistory:
+
+    def test_history_get_last_value(self, new_history):
+        res = new_history.get_last_value(4)
+        next_res = new_history.get_last_value(5)
+        assert res == 3
+        assert next_res == 4
+
+
+@pytest.fixture
+def new_buffer():
+    buffer_data = np.array([ [0.01, 0.02, 0.03], [0.04, 0.05, 0.06] ])
+    num_out_chans = 2
+    return operators.peek(buffer_data, num_out_chans)
 
 
 class TestPeek:
-    """
-    """
 
-    def test_peek_something(self):
-        res = 0
-        assert res == 1
+    def test_peek_get_second_sample_in_first_channel(self, new_buffer):
+        res = new_buffer.get_sample(0, 1)
+        assert res == 0.02
 
-
-# class TestHistory:
-#     """
-#     """
-
-#     def test_history_something(self):
-#         res = 0
-#         assert res == 1
+    def test_peek_get_third_sample_in_second_channel(self, new_buffer):
+        res = new_buffer.get_sample(1, 1)
+        assert res == 0.05
 

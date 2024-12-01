@@ -10,7 +10,7 @@ Other sources:
 
 ## Python environment
 
-Note: _pysound_ is not available yet, so _sounddevice_ and _soundfile_ are used to read and write files.
+Note: _pysound_ is not available yet, so _sounddevice_ and _soundfile_ are used to read and write files. They are not available through homebrew, so a virtual environment should be installed in the user's home directory.
 
 
 ```python
@@ -25,6 +25,4 @@ To load Jupyter lab:
 ```python
 jupyter lab
 ```
-
-????
 
