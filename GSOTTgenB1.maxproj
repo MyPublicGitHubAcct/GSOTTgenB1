@@ -2,26 +2,35 @@
 	"name" : "GSOTTgenB1",
 	"version" : 1,
 	"creationdate" : 3815125654,
-	"modificationdate" : 3815932996,
-	"viewrect" : [ 23.0, 607.0, 300.0, 500.0 ],
+	"modificationdate" : 3833383955,
+	"viewrect" : [ 8.0, 455.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"g4b-1.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
-			}
-,
-			"g4b-2.maxpat" : 			{
+			"g4b-004.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"g4b-3.maxpat" : 			{
+			"g4b-003.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"g4b-002.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"g4b-001.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"g4b-005-Clock-Source.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -29,7 +38,7 @@
 		}
 ,
 		"code" : 		{
-			"switch-sound.gendsp" : 			{
+			"bpm-sample-beat-slicer.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
@@ -37,6 +46,31 @@
 			"ano-phasor.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
+			}
+,
+			"bpm-ratchets.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"switch-sound.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"bpm-sample-loop.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"bpm.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 9/Projects/GSOTTgenB1/code",
+					"projectrelativepath" : "./code"
+				}
+
 			}
 
 		}
@@ -48,6 +82,14 @@
 	}
 ,
 	"searchpath" : 	{
+		"0" : 		{
+			"bootpath" : "~/Documents/Max 9/Packages/GeneratingSoundAndOrganizingTime",
+			"projectrelativepath" : "../../Packages/GeneratingSoundAndOrganizingTime",
+			"label" : "",
+			"recursive" : 1,
+			"enabled" : 1,
+			"includeincollective" : 1
+		}
 
 	}
 ,
